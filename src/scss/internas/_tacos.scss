@@ -1,0 +1,27 @@
+@include tablet{
+
+    .contenedor-tacos{
+        @include grid(3,2rem);
+    }
+
+}
+
+.contenido-tacos{
+    h3,p{
+        display: inline-block;
+    }
+    p{
+        width: 30%;
+        padding: 0 2rem 0 0;
+    }
+    h3{
+        width: 70%;
+    }
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    // p{
+    //     font-weight: $black;
+    // }
+}

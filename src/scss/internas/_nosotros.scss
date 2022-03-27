@@ -1,0 +1,13 @@
+.contenedor-nosotros{
+    @include tablet{
+        @include grid(2,2rem);
+    }
+}
+.nosotros-parrafo{
+    p{
+        text-align: justify;
+    }
+    p:last-child{
+        text-align: center;
+    }
+}

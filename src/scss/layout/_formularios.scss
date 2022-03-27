@@ -1,0 +1,98 @@
+.fondo{
+    background-image: url(https://www.laparrilla.com.mx/images/icons/pattern1.png);
+}
+.formulario {
+    p {
+        font-size: 1.4rem;
+        color: $grisOscuro;
+        margin: 2rem 0 0 0;
+    }
+
+    legend {
+        font-size: 2rem;
+        color: $grisOscuro;
+        text-align: center;
+    }
+
+    label {
+        text-align: center;
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+    }
+    input:not([type="submit"]), 
+    textarea,
+    select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: $blanco;
+        border: 1px solid $gris;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    @include tablet{
+        .row{
+            input:not([type="submit"]), 
+            textarea,
+            select {
+                background-color: $blanco;
+                border: 1px solid $gris;
+                border-radius: 1rem;
+                margin-bottom: 2rem;
+            }
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            label {
+                color: #555555;
+                font-weight: $bold;
+                text-transform: uppercase;
+                display: inline-block;
+            }
+    
+            .name,.tel,.mail{
+                width: 33%;
+                display: inline;
+                padding: 0 15px;
+            }
+            .mensaje{
+                width: 100%;
+                display: inline;
+                padding: 0 15px;
+            }
+        }
+        
+    }
+
+    textarea {
+        height: 20rem;
+    }
+
+    .forma-contacto {
+        max-width: 30rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    input[type="radio"] {
+        margin: 0;
+        width: auto;
+    }
+}
+.contacto{
+    p{
+        margin: 0;
+    }
+
+    .icono{
+        margin-bottom: 2rem;
+        h3{
+            margin-top: -2rem;
+        }
+    }
+}
+.alto{
+    height: 545px;
+}

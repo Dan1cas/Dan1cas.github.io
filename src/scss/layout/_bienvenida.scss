@@ -1,0 +1,17 @@
+.home{
+    background-color: #E5007D;
+    padding: 2% 0;
+}
+.conte-home{
+    h1{
+        color: $blanco;
+    }
+    p{
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+        color: $blanco;
+    }
+    p:last-child{
+        font-weight: $bold;
+    }
+}

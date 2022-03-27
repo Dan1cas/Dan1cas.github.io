@@ -1,0 +1,31 @@
+.icon-txt{
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+}
+.iconos-nosotros{
+    @include tablet{
+        @include grid(3,2rem);
+    }
+}
+
+.icono{
+    text-align: center;
+    img{
+        height: 10rem;
+    }
+    h3{
+        text-transform: uppercase;
+    }
+    &:hover{
+        background-color: darken($amarillo, 5);
+    }  
+    a{
+        color: $negro;
+        text-decoration: none;
+        line-height: 2;
+    }  
+    // .txt{
+    //     text-transform: uppercase;
+    // }
+}

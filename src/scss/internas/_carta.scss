@@ -1,0 +1,100 @@
+.fondo{
+    width: 100%;
+    background-image: url(https://www.laparrilla.com.mx/images/icons/pattern1.png);
+}
+.menu{
+    // padding: 0 2rem;
+    @include tablet{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    h1,h2{
+        padding-top: 2rem;
+    }
+
+    .menu-tacos{
+        .taco,.taco-main{
+            width: 80%;
+        }
+        @include tablet{
+            width: 50%;
+        }
+        h1{
+            text-align: center;
+        }
+        .tacos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include tablet{
+                
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+    .menu-platillos{
+        @include tablet{
+        width: 50%;
+        }
+        h2{
+            text-align: center;
+            font-size: 3.8rem;
+        }
+        .tacos{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            @include tablet{
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+//Menu Tacos
+.tacos{
+    margin: 0px 5rem;
+    p{
+        margin: 0;
+    }
+
+}
+.taco-main{
+    color: #67D6C4;
+    font-size: 2rem;
+    display: inline-block;
+}
+.taco{
+    font-size: 1.6rem;
+    display: inline-block;
+}
+
+.precio{
+    // font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: block;
+    text-align: right;
+    color: #67D6C4;
+}
+.des{
+    color:#E5007D;
+    font-size: 1.3rem;
+}
+.conten-img{
+    height: 30rem;
+    background-image: url(../img/tacosFondo.jpeg);
+    background-size: cover;
+    .capa{
+        height: 100%;
+        background-color:rgba(0,0,0,0.7);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.tx {
+    text-align: center;
+    color: $blanco;
+    font-weight: $bold;
+    line-height: 2;    
+}
